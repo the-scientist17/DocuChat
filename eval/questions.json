@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "What two RAG formulations does the paper compare?",
+    "answer": "RAG-Sequence, which uses the same retrieved document for the whole output sequence, and RAG-Token, which can use a different document for each token.",
+    "source": "rag_paper.pdf",
+    "pages": [1, 3]
+  },
+  {
+    "id": 2,
+    "question": "Which retriever does RAG use and what is it based on?",
+    "answer": "Dense Passage Retriever (DPR), a bi-encoder where both the document and query encoders are based on BERT-base.",
+    "source": "rag_paper.pdf",
+    "pages": [2, 3]
+  },
+  {
+    "id": 3,
+    "question": "Which model is used as the generator in RAG, and how many parameters does it have?",
+    "answer": "BART-large, a pre-trained seq2seq transformer with 400M parameters.",
+    "source": "rag_paper.pdf",
+    "pages": [3]
+  },
+  {
+    "id": 4,
+    "question": "Which Wikipedia dump is used as the knowledge source and how is it split?",
+    "answer": "The December 2018 Wikipedia dump, split into disjoint 100-word chunks for a total of 21M documents.",
+    "source": "rag_paper.pdf",
+    "pages": [4]
+  },
+  {
+    "id": 5,
+    "question": "What library and index type are used to build the MIPS index over the documents?",
+    "answer": "FAISS with a Hierarchical Navigable Small World (HNSW) approximation.",
+    "source": "rag_paper.pdf",
+    "pages": [4]
+  },
+  {
+    "id": 6,
+    "question": "During RAG training, which components are fine-tuned and which are kept fixed?",
+    "answer": "The query encoder and the BART generator are fine-tuned; the document encoder and the document index are kept fixed.",
+    "source": "rag_paper.pdf",
+    "pages": [4]
+  },
+  {
+    "id": 7,
+    "question": "How close does RAG get to state-of-the-art models on 3-way FEVER fact verification?",
+    "answer": "Within 4.3% of the state-of-the-art pipeline models.",
+    "source": "rag_paper.pdf",
+    "pages": [2, 6]
+  },
+  {
+    "id": 8,
+    "question": "In the human evaluation of Jeopardy question generation, how often was RAG judged more factual than BART, and vice versa?",
+    "answer": "RAG was more factual in 42.7% of cases; BART was more factual in only 7.1%.",
+    "source": "rag_paper.pdf",
+    "pages": [6, 8]
+  },
+  {
+    "id": 9,
+    "question": "In the index hot-swapping experiment, how accurate was RAG on world leaders with matching indices?",
+    "answer": "70% correct using the 2016 index for 2016 world leaders and 68% using the 2018 index for 2018 world leaders.",
+    "source": "rag_paper.pdf",
+    "pages": [7, 8]
+  },
+  {
+    "id": 10,
+    "question": "On FEVER, how often is the top retrieved document from a gold evidence article?",
+    "answer": "In 71% of cases; a gold article is in the top 10 retrieved articles in 90% of cases.",
+    "source": "rag_paper.pdf",
+    "pages": [7]
+  },
+  {
+    "id": 11,
+    "question": "What accuracy does RAG achieve on Natural Questions when the correct answer is not in any retrieved document?",
+    "answer": "11.8%, where an extractive model would score 0%.",
+    "source": "rag_paper.pdf",
+    "pages": [6]
+  },
+  {
+    "id": 12,
+    "question": "What are the four functions of the AI RMF Core?",
+    "answer": "GOVERN, MAP, MEASURE and MANAGE.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [8, 25]
+  },
+  {
+    "id": 13,
+    "question": "Which AI RMF function is cross-cutting and applies to all stages of AI risk management?",
+    "answer": "GOVERN.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [8, 25, 27]
+  },
+  {
+    "id": 14,
+    "question": "What are the characteristics of trustworthy AI systems according to the AI RMF?",
+    "answer": "Valid and reliable; safe; secure and resilient; accountable and transparent; explainable and interpretable; privacy-enhanced; and fair with harmful bias managed.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [7, 8, 17]
+  },
+  {
+    "id": 15,
+    "question": "Which trustworthiness characteristic is described as a necessary condition and the base for the others?",
+    "answer": "Valid and reliable.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [17]
+  },
+  {
+    "id": 16,
+    "question": "What are the three major categories of AI bias identified by NIST?",
+    "answer": "Systemic, computational and statistical, and human-cognitive.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [23]
+  },
+  {
+    "id": 17,
+    "question": "Does the AI RMF prescribe a risk tolerance? What does risk tolerance mean?",
+    "answer": "No, it does not prescribe risk tolerance. Risk tolerance is the organization's or AI actor's readiness to bear risk in order to achieve its objectives.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [12]
+  },
+  {
+    "id": 18,
+    "question": "How does the AI RMF define an AI system?",
+    "answer": "An engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations or decisions influencing real or virtual environments, operating with varying levels of autonomy.",
+    "source": "nist_ai_rmf.pdf",
+    "pages": [6]
+  },
+  {
+    "id": 19,
+    "question": "How much did NIST charge to attend the AI RMF workshops?",
+    "answer": "Not in the documents.",
+    "source": null,
+    "pages": []
+  },
+  {
+    "id": 20,
+    "question": "What is the capital of Australia?",
+    "answer": "Not in the documents.",
+    "source": null,
+    "pages": []
+  }
+]

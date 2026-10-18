@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+.DS_Store
+
+# local index and documents
+chroma_db/
+data/*.pdf
+
+eval/results.json
